@@ -46,3 +46,13 @@ On eagle, you'll need to load the following modules.
 ```
 module load openmpi
 ```
+
+### Building Pdoc in CodeBuild
+
+aws codebuild start-build
+--project-name "dev-hero-client-docs-app"
+--source-version "main"
+--buildspec-override "pdoc/buildspec.yml"
+--environment-variables-override
+name=GITHUB_TOKEN_ARN,value='arn:aws:secretsmanager:us-west-2:812847476558㊙️/nrel/github_packages/nwunder2-RqTRPA:GITHUB_TOKEN',type=PLAINTEXT
+name=DISTRIBUTION_ID,value=E1BHI6M9L3NVH5,type=PLAINTEXT
