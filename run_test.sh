@@ -1,10 +1,10 @@
 
 export HERO_ENV="dev"
 export HERO_PROJECT="dfw-app"
-export HERO_CLIENT_ID="6mhtmeq8ailaecpmvd6lj23ico"
-export HERO_CLIENT_SECRET="c70ktei98trjl3q5j4cn626a61226mfl1qq2rkfna29mip85vaa"
+export HERO_CLIENT_ID="306m74pgmccj9qd1ccb876fdgk"
+export HERO_CLIENT_SECRET="u21676f1mrcqmhh5m723l1og4urjbjjg0oir37d4k2j7frpa9i0"
 
-pytest -s -v test/test_data_repo.py
+pytest -s -v test/test_auth.py
 
 unset HERO_ENV
 unset HERO_PROJECT
