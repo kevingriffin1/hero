@@ -14,7 +14,7 @@ export HERO_CLIENT_SECRET="u21676f1mrcqmhh5m723l1og4urjbjjg0oir37d4k2j7frpa9i0"
 # run all the things
 pytest test
 # Or just run a single suite/collection
-# pytest -s -v test/test_search.py
+# pytest -s -v test/test_data_repo.py
 
 # Unset the environment variables
 unset HERO_ENV
